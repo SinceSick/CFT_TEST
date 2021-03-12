@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Выбор валюты"
+        app:titleTextColor="@color/white"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/search_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"
+            android:layout_gravity="end|center"
+            android:gravity="center"
+            android:layout_marginEnd="15dp">
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="22sp"
+        android:hint="@string/search"
+        android:visibility="gone"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" />
+
+</LinearLayout>

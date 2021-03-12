@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CFT_TEST</string>
+    <string name="update">Обновить курс</string>
+    <string name="currency">Курсы валют</string>
+    <string name="abbreviation">RUB</string>
+    <string name="num_code">036</string>
+    <string name="equal">1 =  </string>
+    <string name="currency_example">57.1016</string>
+    <string name="rub">₽</string>
+    <string name="currency_name">Российский рубль</string>
+    <string name="delta">-0.5421</string>
+    <string name="last_date">10.03.2021</string>
+    <string name="search">Поиск...</string>
+</resources>

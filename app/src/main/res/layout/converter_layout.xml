@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/rub_card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/char_code_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:background="@color/red"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="@string/abbreviation"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:gravity="center|end"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/value_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/roboto_black"
+                        android:gravity="center|end"
+                        android:text="1"
+                        android:textSize="22sp"
+                        android:inputType="numberDecimal"
+                        android:maxLength="16"/>
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="@string/currency_name"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/currency_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/dark_gray"
+        android:contentDescription="@string/update"
+        android:src="@drawable/ic_add_fab"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:tint="@null" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
